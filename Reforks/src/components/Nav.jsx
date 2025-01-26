@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './Button'
 const Nav = () => {
   return (
-    <div className='max-w-screen-xl  mx-auto flex items-center py-6 justify-between text-white'>
+    <div className='max-w-screen-xl  mx-auto flex items-center py-6 justify-between text-white border-b-2  border-zinc-700 '>
         <div className='nleft flex items-center'>
        <div className='w-32 h-32 overflow-hidden rounded-md p-5'>
        <img src="https://i.pinimg.com/736x/36/0c/d1/360cd1f1ca79d9522c973777bd7b696b.jpg" alt="" />
