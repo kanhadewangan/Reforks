@@ -3,7 +3,8 @@ import Nav from "./components/Nav";
 import Work from "./components/Work";
 import Strips from "./components/Strips";
 import Products from "./components/Products";
-import Markee from "./components/Markee";
+
+import Markquee from "./components/Markquee";
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
         <Work />
         <Strips />
         <Products />
-        <Markee />
+        <Markquee />
       </div>
     </>
   );
