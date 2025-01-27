@@ -5,6 +5,7 @@ import Strips from "./components/Strips";
 import Products from "./components/Products";
 
 import Markquee from "./components/Markquee";
+import Cards from "./components/Cards";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Strips />
         <Products />
         <Markquee />
+        <Cards/>
       </div>
     </>
   );
