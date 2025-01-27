@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 
-export const Button = () => {
+ const Button = () => {
   return (
     <div>
 
@@ -13,3 +13,5 @@ export const Button = () => {
     </div>
   )
 }
+
+export default Button ;

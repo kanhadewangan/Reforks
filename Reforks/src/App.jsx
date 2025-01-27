@@ -3,6 +3,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Work from './components/Work'
 import Strips from './components/Strips'
+import Products from './components/Products'
 function App() {
  
 
@@ -12,6 +13,7 @@ function App() {
    <Nav/>
    <Work/>
    <Strips/>
+   <Products/>
    </div>
  
     
