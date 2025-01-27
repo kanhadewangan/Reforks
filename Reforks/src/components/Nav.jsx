@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import  Button  from "./Button";
 const Nav = () => {
   return (
     <div className="max-w-screen-xl  mx-auto flex items-center py-6 justify-between text-white border-b-2  border-zinc-700 ">
