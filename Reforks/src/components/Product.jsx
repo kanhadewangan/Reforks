@@ -3,7 +3,7 @@ import Button from './Button';
 const Product = ({elem}) => {
   return (
     <div>
-        <div className='w-full py-5 bg-gray-700'>
+        <div className='w-full py-5 text-white'>
             <div className='max-w-screen-xl  mx-auto flex justify-between items-center' >
                 <h1 className='text-6xl capitalize font-medium '>{elem.title}</h1>
                 
