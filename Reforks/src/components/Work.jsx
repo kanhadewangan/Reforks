@@ -1,12 +1,14 @@
 import React from "react";
-("48:45");
+import { useState } from "react";
+import { motion,useScroll,useMotionValueEvent  } from "framer-motion";
 const Work = () => {
-  var image = [
+
+  const [image ,SetImage] = useState([
     {
       url: "https://i.pinimg.com/736x/e3/f9/a3/e3f9a39a1a0fbf8db8a7793fd110f91c.jpg",
       top: "50%",
       left: "50%",
-      isActive: true,
+      isActive: false,
     },
     {
       url: "https://i.pinimg.com/736x/6a/be/34/6abe343b624f648d5628d3849bbbec22.jpg",
@@ -38,7 +40,52 @@ const Work = () => {
       left: "52%",
       isActive: false,
     },
-  ];
+  ])
+  const { scrollYProgress } = useScroll()
+
+  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
+  //   ( Math.floor(latest*100))
+  // })
+
+  scrollYProgress.on("change",(value)=>{
+    function show (arr){
+      SetImage((prev)=>(
+       prev.map((item , index)=>(
+        arr.indexOf(index) !== -1 ? {...item , isActive:true} : ({...item , isActive:false}
+       ))
+      )
+      ))
+
+    }
+   const data =  Math.floor(value * 100)
+   switch(data)
+   {
+    case 0:
+      show([])
+     break;
+    case 1:
+     show([0])
+      break;
+      case 2 :
+        show([0,1])
+        break
+   
+   case 3 :
+      show([0,1,2])
+      break
+    case 4 :
+      show([0,1,2,3])
+      break
+    case 5 :
+      show([0,1,2,3,4])
+      break
+    case 6 :
+      show([0,1,2,3,4,5])
+      break
+}
+
+  })
+  
   return (
     <div>
       <div className="W-full   ">
@@ -52,7 +99,7 @@ const Work = () => {
         {image.map(
           (elem, index) =>
             elem.isActive && (
-              <img
+              <img key={index}
                 className=" absolute w-60  rounded-lg -translate-x-[50%] -translate-y-[50%]"
                 src={elem.url}
                 style={{ top: elem.top, left: elem.left }}
@@ -63,5 +110,6 @@ const Work = () => {
     </div>
   );
 };
+
 
 export default Work;

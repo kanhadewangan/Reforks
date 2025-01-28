@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="basis-1/2 flex  gap-10">
             <div className="basis-1/3">
                 <h1 className="mb-10 capitalize">Social</h1>
-                {["instagram", "facebook", "twitter"].map((item) => <a className="block mt-4 capitalize text-zinc-600">{item}</a>)}
+                {["instagram", "facebook", "twitter"].map((item , key) => <a  key ={key} className="block mt-4 capitalize text-zinc-600">{item}</a>)}
             </div>
             <div className="basis-1/3">
                 <h1 className="mb-10 capitalize"></h1>
-                {["instagram", "facebook", "twitter"].map((item) => <a className="block mt-4 capitalize text-zinc-600">{item}</a>)}
+                {["instagram", "facebook", "twitter"].map((item ,idx) => <a key={idx} className="block mt-4 capitalize text-zinc-600">{item}</a>)}
             </div>
            
             

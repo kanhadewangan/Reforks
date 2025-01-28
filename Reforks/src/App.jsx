@@ -6,7 +6,11 @@ import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Markquee from "./components/Markquee";
 import Cards from "./components/Cards";
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 function App() {
+  const scroll = new LocomotiveScroll();
   return (
     <>
       <div className='w-full h-full bg-zinc-900 text-["satoshi"]'>

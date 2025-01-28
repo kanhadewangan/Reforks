@@ -13,9 +13,9 @@ const Nav = () => {
         <div className="links flex gap-15 ml-20 ">
           {["Home", "Work", "Culture", "News"].map((elem, idx) =>
             elem.length == 0 ? (
-              <span className="w-[2px] h-7 bg-zinc-600"></span>
+              <span key={idx} className="w-[2px] h-7 bg-zinc-600"></span>
             ) : (
-              <a
+              <a key={idx}
                 className="text-sm  font-regular flex items-center gap-1 "
                 href="#"
               >

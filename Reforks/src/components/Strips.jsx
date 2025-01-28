@@ -10,7 +10,7 @@ const Strips = () => {
   return (
     <div className='flex mt-20 items-center py-30'>
            {data.map((elem , key) =>{
-             return <Strip value ={elem} />
+             return <Strip key={key} value ={elem} />
            })}
     </div>
   )
