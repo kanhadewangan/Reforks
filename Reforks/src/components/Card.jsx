@@ -21,7 +21,7 @@ const Card = ({width,start,para, btn , hover}) => {
                {start==true ? <h1>Start Project</h1> : null}
                 </div>
                     {btn==false ? <button className='w-32 rounded-full  mt-5 py-2 px-3  border-2 border-zinc-50'> Contact Us</button> : null}
-                {para==true ? <p className='text-sm  text-zinc-500 font-medium mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam, nisi, upiditate minus inventore molestias unde, repellendus ipsa alias? Similique recusandae autem ipsum, ad debitis commodi animi?</p> : null}
+                {para==true ? <p className='text-sm  text-white font-medium mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam, nisi, upiditate minus inventore molestias unde, repellendus ipsa alias? Similique recusandae autem ipsum, ad debitis commodi animi?</p> : null}
                     
         </div>
         </div>

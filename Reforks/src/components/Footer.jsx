@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-full  text-white font-semibold leading-none tracking-tight ">
         <div className="max-w-screen-xl  py-10   mx-auto flex gap-30 ">
           <div className="basis-1/2">
-            <h1 className="text-[13rem]">refkous.</h1>
+            <h1 className="text-[13rem]">refokus.</h1>
           </div>
           <div className="basis-1/2 flex  gap-10">
             <div className="basis-1/3">

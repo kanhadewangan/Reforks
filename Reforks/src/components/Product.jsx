@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from './Button';
-const Product = ({elem}) => {
+const Product = ({elem,mover,count}) => {
   return (
     <div>
-        <div className='w-full py-5 text-white'>
-            <div className='max-w-screen-xl  mx-auto flex justify-between items-center' >
+        <div className='w-full py-5 h-[23rem] text-white'>
+            <div onMouseEnter={()=>{mover(count)}} className='max-w-screen-xl  mx-auto flex justify-between items-center' >
                 <h1 className='text-6xl capitalize font-medium '>{elem.title}</h1>
                 
                 <div className='dets w-1/3'>
@@ -16,6 +16,7 @@ const Product = ({elem}) => {
                       
                 </div>
             </div>
+            
 
         </div>
     </div>
